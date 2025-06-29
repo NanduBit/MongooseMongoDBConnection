@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('Super Secrect MongoDB URI Here', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+mongoose.connect('Super Secrect MongoDB URI Here');
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error: "));
